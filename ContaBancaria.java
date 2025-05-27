@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 public class ContaBancaria{
-
+ //depois dou uma olhada
     private String name;
     private int agencia;
     private String contaCorrente;
