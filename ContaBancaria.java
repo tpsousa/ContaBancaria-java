@@ -14,13 +14,15 @@ public class ContaBancaria{
        this.saldo = saldo;
     }
 
+     Scanner scanner = new Scanner(System.in);
+
+
+     public String getName(){
+         return name;
+     }
      public String setName(String name){
         return this.name = name;
-     }
-
-      public String getName(){
-        return name;
-     }
+      }
      public double getSaldo(){
         return saldo;
      }
@@ -46,9 +48,9 @@ public class ContaBancaria{
 
      public void Depositar(){
          
-         Scanner scanner = new Scanner(System.in);
+         //Scanner scanner = new Scanner(System.in);
 
-
+        //System.out.println("digite o valor de deposito: ");
         int valorDeposito = scanner.nextInt();
 
         if(valorDeposito > 0){
@@ -61,8 +63,8 @@ public class ContaBancaria{
      }
 
      public void Sacar(){
-        Scanner scanner = new Scanner(System.in);
-
+       // Scanner scanner = new Scanner(System.in);
+        //System.out.println("digite o valor que deseja sacar da conta");
         int valorParaSaque = scanner.nextInt();
 
         if(this.saldo >= valorParaSaque){
@@ -71,6 +73,10 @@ public class ContaBancaria{
             System.out.println("o valor do saque foi : " + valorParaSaque + "e o saldo atual e" + saldo);
         }
      }
+
+    // public void ConsultarSaldo(double saldo){
+      //System.out.println("o saldo atual da conta bancaria e: " + this.saldo);
+     //}
      //o metodo ja esta criado praticamente acredito
      //public double getSaldo () {
          

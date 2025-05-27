@@ -1,6 +1,4 @@
 
-
-
 class contaCorrente extends ContaBancaria {
     private String name;
     private int numero;
@@ -21,14 +19,10 @@ class contaCorrente extends ContaBancaria {
     public String setName(String name){
       return this.name = name;
     }
-
     public int getNumero(){
         return numero;
     }
     public int setNumero(int numero){
         return this.numero = numero;
-    }
-
-
-    
+    }   
 }
