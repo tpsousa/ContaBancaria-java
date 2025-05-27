@@ -1,6 +1,5 @@
 
 import java.util.Scanner;
-
 public class ContaBancaria{
 
     private String name;
@@ -68,6 +67,17 @@ public class ContaBancaria{
 
         if(this.saldo >= valorParaSaque){
             this.saldo-= valorParaSaque;
+
+            System.out.println("o valor do saque foi : " + valorParaSaque + "e o saldo atual e" + saldo);
         }
      }
+     //o metodo ja esta criado praticamente acredito
+     //public double getSaldo () {
+         
+     //}
+     //public void ConsultarSaldo() {
+          
+     //}
+     //depois de criar os metodos tenho que chamalos na minha main,no meu arquivo principal basicamente
+     
 }
